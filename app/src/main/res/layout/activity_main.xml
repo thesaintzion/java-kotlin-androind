@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/Container"
+        android:orientation="vertical"
+        android:background="#fff"
+        >
+        <!-- Image view logo-->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:background="@drawable/bonus"
+            />
+
+    <!--container-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp"
+        android:id="@+id/innerContainer"
+        android:orientation="vertical"
+        android:background="@color/eee"
+        >
+
+        <TextView
+            android:id="@+id/welcomeText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/welcome_text"
+            android:textSize="30dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="50dp"
+            android:textColor="@color/black"
+            android:gravity="center"
+
+
+            />
+
+<!--Continue button-->
+<Button android:id="@+id/continueBtn"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Continue"
+    android:background="@color/colorPrimaryDark"
+    android:textColor="#ffffff"
+   android:layout_marginTop="30px"
+    >
+
+</Button>
+
+
+
+                </LinearLayout>
+    </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+
+

@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".CalculatorActivity"
+    android:orientation="vertical"
+    >
+
+<!--Nav Bar -->
+   <LinearLayout
+       android:id="@+id/ll_cal_nav"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:gravity="center"
+       android:background="@color/colorAccent"
+       >
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:padding="10dp"
+           android:text="Link One"
+           android:textColor="@color/eee"
+           android:layout_weight="1"
+           android:gravity="center"
+
+           />
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:padding="10dp"
+           android:text="Link Two"
+           android:textColor="@color/eee"
+           android:layout_weight="1"
+           android:gravity="center"
+           />
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:padding="10dp"
+           android:text="Link Three"
+           android:textColor="@color/eee"
+           android:layout_weight="1"
+           android:gravity="center"
+           />
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:padding="10dp"
+           android:text="Link Four"
+           android:textColor="@color/eee"
+           android:layout_weight="1"
+           android:gravity="center"
+           />
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:padding="10dp"
+           android:text="Link "
+           android:textColor="@color/eee"
+           android:layout_weight="1"
+           android:gravity="center"
+           />
+
+   </LinearLayout>
+<!--./ll_cal_nav-->
+
+<!--Main Con-->
+    <LinearLayout
+        android:id="@+id/ll_cal_numbers_main_con"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/black"
+        >
+
+<!--Operators-->
+        <LinearLayout
+            android:id="@+id/ll_cal_operators_con"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/eee"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="+"
+                android:textColor="@color/colorAccent"
+                android:gravity="center"
+                android:textSize="30dp"
+                android:layout_weight="1"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="-"
+                android:textColor="@color/colorAccent"
+                android:gravity="center"
+                android:textSize="30dp"
+                android:layout_weight="1"
+
+
+                />
+
+
+        </LinearLayout>
+<!-- ./ ll_cal_operators_con-->
+
+<!-- Something-->
+    <LinearLayout
+        android:id="@+id/ll_cal_numbers_con"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="@color/eee"
+        android:layout_weight="1"
+
+        >
+
+       <TextView
+           android:id="@+id/tv_number1"
+           android:text="1"
+           android:layout_width="wrap_content"
+           android:layout_height="match_parent"
+           android:background="#ffffff"
+           android:textColor="@color/black"
+           android:gravity="center"
+           android:padding="20dp"
+           android:layout_weight="1"
+           android:textSize="20dp"
+           android:layout_margin="8dp"
+           />
+
+        <TextView
+            android:id="@+id/tv_number2"
+            android:text="2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="#ffffff"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:padding="20dp"
+            android:layout_weight="1"
+            android:textSize="20dp"
+            android:layout_margin="8dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="3"
+            android:background="#ffffff"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:padding="20dp"
+            android:layout_weight="1"
+            android:textSize="20dp"
+            android:layout_margin="8dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="4"
+            android:background="#ffffff"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:padding="20dp"
+            android:layout_weight="1"
+            android:textSize="20dp"
+            android:layout_margin="8dp"
+            />
+
+    </LinearLayout>
+    </LinearLayout>
+
+<!--Result container-->
+    <LinearLayout
+        android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+        android:minHeight="200dp"
+        android:background="@color/eee"
+        android:padding="10dp"
+        android:layout_marginTop="20dp"
+        >
+        <TextView
+            android:id="@+id/tv_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Output goes here....."
+            />
+
+    </LinearLayout>
+<!-- Button Container-->
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:padding="20dp"
+    android:gravity="center"
+    >
+    <Button
+        android:id="@+id/bt_calculate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calculate"
+        android:background="@color/colorAccent"
+        android:textColor="#ffffff"
+        />
+</LinearLayout>
+
+</LinearLayout>
+
+
+
+
