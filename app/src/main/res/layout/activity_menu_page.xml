@@ -14,7 +14,6 @@
         android:layout_height="200dp"
         android:background="@drawable/show_curve_bg"
         android:orientation="vertical"
-
         >
         <LinearLayout
             android:layout_width="match_parent"
@@ -87,7 +86,30 @@
            </LinearLayout>
 
            <LinearLayout
-               android:id="@+id/ll_list_con_6"
+               android:id="@+id/ll_roll_dice"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               android:background="@drawable/border_radius_white_bg"
+               android:layout_marginLeft="15dp"
+               android:layout_marginRight="15dp"
+               android:layout_marginBottom="10dp"
+               >
+               <ImageView
+                   android:id="@+id/im_list_img_00"
+                   android:src="@drawable/ic_border_outer_black_24dp"
+                   android:background="@drawable/icon_bg_circle"
+                   style="@style/list_img"
+                   />
+               <TextView
+                   android:id="@+id/tv_list_headline_00"
+                   style="@style/list_headline"
+                   android:text="Roll Dice"
+                   />
+           </LinearLayout>
+
+           <LinearLayout
+               android:id="@+id/ll_yoga_remind"
                android:layout_width="match_parent"
                android:layout_height="wrap_content"
                android:orientation="horizontal"
@@ -110,7 +132,7 @@
            </LinearLayout>
 
            <LinearLayout
-               android:id="@+id/ll_list_con_2"
+               android:id="@+id/ll_todo_app"
                android:layout_width="match_parent"
                android:layout_height="wrap_content"
                android:orientation="horizontal"
@@ -118,23 +140,22 @@
                android:layout_marginLeft="15dp"
                android:layout_marginRight="15dp"
                android:layout_marginBottom="10dp"
-               android:elevation="4dp"
                >
                <ImageView
-                   android:id="@+id/im_list_img_2"
+                   android:id="@+id/im_list_img_4"
                    android:src="@drawable/ic_check_circle_black_24dp"
                    android:background="@drawable/icon_bg_circle"
                    style="@style/list_img"
                    />
                <TextView
-                   android:id="@+id/tv_list_headline_2"
+                   android:id="@+id/tv_list_headline_4"
                    style="@style/list_headline"
-                   android:text="Bottle spinal"
+                   android:text="Todo app"
                    />
            </LinearLayout>
 
            <LinearLayout
-               android:id="@+id/ll_list_con_3"
+               android:id="@+id/ll_roman_app"
                android:layout_width="match_parent"
                android:layout_height="wrap_content"
                android:orientation="horizontal"
@@ -157,7 +178,7 @@
            </LinearLayout>
 
            <LinearLayout
-               android:id="@+id/ll_list_con_4"
+               android:id="@+id/ll_list_con_2"
                android:layout_width="match_parent"
                android:layout_height="wrap_content"
                android:orientation="horizontal"
@@ -165,20 +186,20 @@
                android:layout_marginLeft="15dp"
                android:layout_marginRight="15dp"
                android:layout_marginBottom="10dp"
+               android:elevation="0dp"
                >
                <ImageView
-                   android:id="@+id/im_list_img_4"
+                   android:id="@+id/im_list_img_2"
                    android:src="@drawable/ic_check_circle_black_24dp"
                    android:background="@drawable/icon_bg_circle"
                    style="@style/list_img"
                    />
                <TextView
-                   android:id="@+id/tv_list_headline_4"
+                   android:id="@+id/tv_list_headline_2"
                    style="@style/list_headline"
-                   android:text="Todo app"
+                   android:text="Bottle spinal"
                    />
            </LinearLayout>
-
 
            <LinearLayout
                android:id="@+id/ll_list_con_5"

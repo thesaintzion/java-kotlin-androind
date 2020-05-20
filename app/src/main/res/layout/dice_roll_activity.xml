@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:id="@+id/main"
+    tools:context=".DiceRollActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/dice_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        android:background="#fff"
+        />
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/dice_toolbar"
+    >
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:id="@+id/ll_inner_con"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            >
+            <ImageView
+                android:id="@+id/iv_dice_img"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/empty_dice"
+                android:layout_gravity="center"
+                />
+            <TextView
+                android:id="@+id/tv_dice_result_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Result 1"
+                android:textColor="#fff"
+                android:textSize="18sp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            >
+
+            <ImageView
+                android:id="@+id/iv_dice_img_2"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:src="@drawable/empty_dice" />
+            <TextView
+                android:id="@+id/tv_dice_result_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Result 2"
+                android:textColor="#fff"
+                android:textSize="18sp"
+                />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tv_dice_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Total"
+        android:textColor="@color/colorAccent"
+        android:textSize="18sp"
+        android:layout_marginTop="20dp"
+        />
+
+        <Button
+            android:id="@+id/bt_dice_btn"
+            android:text="Roll Dice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="80dp"
+            android:background="@drawable/btn_rounded"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            />
+
+</LinearLayout>
+
+</ScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="20dp"
+        android:src="@drawable/ic_refresh_black_24dp"
+        android:id="@+id/fb_add_btn"
+        app:maxImageSize="25dp"
+        />
+</RelativeLayout>
