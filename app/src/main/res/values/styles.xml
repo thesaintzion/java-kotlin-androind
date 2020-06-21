@@ -8,7 +8,7 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
-<!-- Dashboard card style-->
+    <!-- Dashboard card style-->
     <style name="dashboard_card_con">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
@@ -24,15 +24,15 @@
         <item name="android:layout_weight">1</item>
         <item name="android:text">Content</item>
         <item name="android:background">@drawable/border_radius_white_bg</item>
-      <item name="android:textColor">@color/gray</item>
+        <item name="android:textColor">@color/gray</item>
         <item name="android:textStyle">bold</item>
         <item name="android:gravity">center</item>
         <item name="android:layout_margin">10dp</item>
         <item name="android:textSize"><![CDATA[16sp]]></item>
     </style>
-<!-- ./ Dashboard card-->
+    <!-- ./ Dashboard card-->
 
-<!-- Menu Page Styles -->
+    <!-- Menu Page Styles -->
     <style name="menu_page_nav_style">
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_width">wrap_content</item>
@@ -41,16 +41,17 @@
         <item name="android:layout_weight">1</item>
         <item name="android:gravity">center</item>
     </style>
-<style name="list_headline">
-   <item name="android:layout_height">wrap_content</item>
-    <item name="android:layout_width">wrap_content</item>
-    <item name="android:layout_weight">1</item>
-    <item name="android:textSize">14sp</item>
-    <item name="android:textColor">@color/colorPrimary</item>
-    <item name="android:gravity">left</item>
-    <item name="android:layout_gravity">center</item>
-    <item name="android:textStyle">bold</item>
-</style>
+
+    <style name="list_headline">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:gravity">left</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textStyle">bold</item>
+    </style>
 
     <style name="list_img">
         <item name="android:layout_width">40dp</item>
@@ -60,6 +61,18 @@
         <item name="android:padding">7dp</item>
     </style>
 
-<!-- ./ Menu page styles-->
+    <style name="FullscreenTheme" parent="AppTheme">
+        <item name="android:actionBarStyle">@style/FullscreenActionBarStyle</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:windowBackground">@null</item>
+        <item name="metaButtonBarStyle">?android:attr/buttonBarStyle</item>
+        <item name="metaButtonBarButtonStyle">?android:attr/buttonBarButtonStyle</item>
+    </style>
+
+    <style name="FullscreenActionBarStyle" parent="Widget.AppCompat.ActionBar">
+        <item name="android:background">@color/black_overlay</item>
+    </style>
+
+    <!-- ./ Menu page styles-->
 
 </resources>

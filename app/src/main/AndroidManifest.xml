@@ -19,7 +19,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".CalculatorActivity" />
+
+        <activity android:name=".ActivityCalculator">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity"
+                />
+        </activity>
+
         <activity android:name=".ActivityMenuPage" />
         <activity android:name=".ActivityDashboard" />
         <activity android:name=".ActivityRomanConverter" />
@@ -30,12 +37,11 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
         </activity>
-
-        <activity android:name=".DiceRollActivity"
-            >
+        <activity android:name=".DiceRollActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
+                android:value=".MainActivity"
+                />
         </activity>
     </application>
 
